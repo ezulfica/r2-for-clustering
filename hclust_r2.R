@@ -25,7 +25,7 @@ hclust_r2 = function(data , col = NULL , kmin , kmax , scaled = F , center = F){
       sum(apply(data_clust[col], FUN = function(x){(x - mean(x))**2} , MARGIN = 2))
       }
     
-    TWSS = sum(sapply(X = unlist(unique(data["hclust"])), FUN = WSS))
+    TWSS = sum(sapply(X = unlist(unique(data["hclust"])), FUN = WSS)) #Total Within sum square
     r2 = (TSS - TWSS) / TSS
     }
     
