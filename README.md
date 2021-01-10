@@ -99,5 +99,5 @@ print(hclust_r2(data = df, col = 1:13, kmin = 1,kmax = 15))
 plot(hclust_r2(data = df, col = 1:13, kmin = 1,kmax = 15), type = "b", ylab = "R2", xlab = "number of cluster")
 ```
 <center>
-<img src="https://raw.githubusercontent.com/ezulfica/r2-for-clustering/main/r2.png" style="display: block; margin: auto;" />
+<img src="https://raw.githubusercontent.com/ezulfica/r2-for-clustering/main/rsquare.png" style="display: block; margin: auto;" />
 </center>
