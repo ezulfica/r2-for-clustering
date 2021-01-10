@@ -10,7 +10,8 @@ The main goal was to classify every cities and create cluster with
 k-means and hierarchical clustering algorithms. To help us with deciding
 how many cluster we use *R*<sup>2</sup> criteria which is :
 
-$$ R^2 = \\frac{BSS}{TSS} $$
+<img src="http://latex.codecogs.com/png.latex?\dpi{110}&space;R^2&space;=&space;\frac{BSS}{TSS}" title="http://latex.codecogs.com/png.latex?\dpi{110} R^2 = \frac{BSS}{TSS}" />
+
 where BSS define the between sum square and TSS the total sum square.
 
 The idea is, if k is the number of cluster, n our observations, if k
@@ -43,9 +44,9 @@ df_hclust = hclust(d = dist(x = df) , method = "ward.D2" )
 plot(df_hclust)
 rect.hclust(tree = df_hclust, k= 3, border = "red")
 ```
-
-<img src="r2_files/figure-gfm/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
-
+<center>
+<img src="https://raw.githubusercontent.com/ezulfica/r2-for-clustering/main/hclustdend.png" style="display: block; margin: auto;" />
+</center>
 That’s how our observation will be distribued.
 
 Now let’s numerote our clusters. For each observation we will put a
@@ -97,5 +98,6 @@ print(hclust_r2(data = df, col = 1:13, kmin = 1,kmax = 15))
 ``` r
 plot(hclust_r2(data = df, col = 1:13, kmin = 1,kmax = 15), type = "b", ylab = "R2", xlab = "number of cluster")
 ```
-
-<img src="r2_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
+<center>
+<img src="https://raw.githubusercontent.com/ezulfica/r2-for-clustering/main/r2.png" style="display: block; margin: auto;" />
+</center>
