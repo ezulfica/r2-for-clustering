@@ -15,7 +15,7 @@ how many clusters we use *R*<sup>2</sup> criteria which is :
 where BSS defines the between sum square and TSS the total sum square.
 
 The idea is, if k is the number of cluster, n our observations, if k
-converges toward n,*R*<sup>2</sup> converges toward 1.
+converges toward n, *R*<sup>2</sup> converges toward 1.
 
 Then we need to observe which is the most suitable while not input too much calculation. Meaning if we add
 one more cluster, how much do we gain ?
