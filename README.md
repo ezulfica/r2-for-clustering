@@ -47,7 +47,7 @@ rect.hclust(tree = df_hclust, k= 3, border = "red")
 <center>
 <img src="https://raw.githubusercontent.com/ezulfica/r2-for-clustering/main/hclustdend.png" style="display: block; margin: auto;" />
 </center>
-That’s how our observation will be distribued.
+That’s how our observations will be distribued.
 
 Now let’s numerote our clusters. For each observation we will put a
 number for the corresponding cluster (the cutree function from stats
