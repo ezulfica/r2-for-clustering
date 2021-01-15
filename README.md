@@ -4,20 +4,20 @@ hclust\_r2
 As a group project, we studied climatic data from meteo station in
 Switzerland. From tutitiempo and MeteoSuisse we collected 68 observation
 from 2019. We observed the temperature, the number of foggy, rainy,
-snowy, stormy and other variables.
+snowy, stormy days and other variables.
 
 The main goal was to classify every cities and create cluster with
 k-means and hierarchical clustering algorithms. To help us with deciding
-how many cluster we use *R*<sup>2</sup> criteria which is :
+how many clusters we use *R*<sup>2</sup> criteria which is :
 
 <img src="http://latex.codecogs.com/png.latex?\dpi{110}&space;R^2&space;=&space;\frac{BSS}{TSS}" title="http://latex.codecogs.com/png.latex?\dpi{110} R^2 = \frac{BSS}{TSS}" />
 
-where BSS define the between sum square and TSS the total sum square.
+where BSS defines the between sum square and TSS the total sum square.
 
 The idea is, if k is the number of cluster, n our observations, if k
 converges toward n,*R*<sup>2</sup> converges toward 1.
 
-Then we need to observe which is the most suitable. Meaning if we add
+Then we need to observe which is the most suitable while not input too much calculation. Meaning if we add
 one more cluster, how much do we gain ?
 
 Since hclust function didn’t gave *R*<sup>2</sup>, i just programmed it.
