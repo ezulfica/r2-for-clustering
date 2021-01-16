@@ -49,7 +49,7 @@ rect.hclust(tree = df_hclust, k= 3, border = "red")
 </center>
 That’s how our observations will be distribued.
 
-Now let’s numerote our clusters. For each observation we will put a
+Now let’s numerate our clusters. For each observation we will put a
 number for the corresponding cluster (the cutree function from stats
 package does it automatically).
 
