@@ -2,27 +2,27 @@ hclust\_r2
 ================
 
 As a group project, we studied climatic data from meteo station in
-Switzerland. From tutitiempo and MeteoSuisse we collected 68 observation
+Switzerland. From tutitiempo and MeteoSuisse we collected 68 observations
 from 2019. We observed the temperature, the number of foggy, rainy,
 snowy, stormy days and other variables.
 
 The main goal was to classify every cities and create cluster with
 k-means and hierarchical clustering algorithms. To help us with deciding
-how many clusters we use *R*<sup>2</sup> criteria which is :
+how many clusters are optimal, we use *R*<sup>2</sup> criteria which is :
 
 <img src="http://latex.codecogs.com/png.latex?\dpi{110}&space;R^2&space;=&space;\frac{BSS}{TSS}" title="http://latex.codecogs.com/png.latex?\dpi{110} R^2 = \frac{BSS}{TSS}" />
 
 where BSS defines the between sum square and TSS the total sum square.
 
 The idea is, if k is the number of cluster, n our observations, if k
-converges toward n, *R*<sup>2</sup> converges toward 1.
+converges toward n then *R*<sup>2</sup> converges toward 1.
 
 Then we need to observe which is the most suitable while not input too much calculation. Meaning if we add
-one more cluster, how much do we gain ?
+one more cluster, how much do we gain?
 
 Since hclust function didn’t gave *R*<sup>2</sup>, i just programmed it.
 
-Before starting, let’s see an head of the data.
+Before starting, let’s see a head of the data.
 
 ``` r
 head(df)
@@ -36,7 +36,7 @@ head(df)
     ## BUCHS-AARAU           0.8 15.5 6.2  890.24 5.2 159 15  5 45  0 47.38 8.08 387
     ## CHANGINS             11.5 15.5 7.1 1054.85 9.5   0  0  0  0  0 46.40 6.23 430
 
-Let’s see an example with 3 clusters, and how operate the function. We
+Let’s see an example with three clusters, and how operate the function. We
 will use Ward criteria.
 
 ``` r
