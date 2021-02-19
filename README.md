@@ -8,7 +8,7 @@ snowy, stormy days and other variables.
 
 The main goal was to classify every cities and create cluster with
 k-means and hierarchical clustering algorithms. To help us with deciding
-how many clusters are optimal, we use *R*<sup>2</sup> criteria which is :
+how many clusters are optimal, we used *R*<sup>2</sup> criteria which is :
 
 <img src="http://latex.codecogs.com/png.latex?\dpi{110}&space;R^2&space;=&space;\frac{BSS}{TSS}" title="http://latex.codecogs.com/png.latex?\dpi{110} R^2 = \frac{BSS}{TSS}" />
 
