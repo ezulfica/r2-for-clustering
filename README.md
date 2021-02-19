@@ -17,7 +17,7 @@ where BSS defines the between sum square and TSS the total sum square.
 The idea is, if k is the number of cluster, n our observations, if k
 converges toward n then *R*<sup>2</sup> converges toward 1.
 
-Then we need to observe which is the most suitable while not input too much calculation. Meaning if we add
+Then we need to observe which is the most suitable while input the less computation. Meaning if we add
 one more cluster, how much do we gain?
 
 Since hclust function didn’t gave *R*<sup>2</sup>, i just programmed it.
